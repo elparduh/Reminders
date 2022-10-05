@@ -11,8 +11,14 @@
 		274A27DE28DCB55B00B406D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A27DD28DCB55B00B406D4 /* ContentView.swift */; };
 		274A27E028DCB55E00B406D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 274A27DF28DCB55E00B406D4 /* Assets.xcassets */; };
 		274A27E328DCB55E00B406D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 274A27E228DCB55E00B406D4 /* Preview Assets.xcassets */; };
-		274A27E528DCB55F00B406D4 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A27E428DCB55E00B406D4 /* Persistence.swift */; };
 		274A27E828DCB55F00B406D4 /* Reminders.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 274A27E628DCB55F00B406D4 /* Reminders.xcdatamodeld */; };
+		274A27F228DCD2DA00B406D4 /* RemindersDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A27F128DCD2DA00B406D4 /* RemindersDataManager.swift */; };
+		274A27F528DCD44200B406D4 /* HelperFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A27F428DCD44200B406D4 /* HelperFormatter.swift */; };
+		274A27F828DCD48700B406D4 /* DatePickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A27F728DCD48700B406D4 /* DatePickerTextField.swift */; };
+		274A27FB28DCD53500B406D4 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A27FA28DCD53500B406D4 /* TaskModel.swift */; };
+		274A27FE28DCDA6100B406D4 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A27FD28DCDA6100B406D4 /* TaskViewModel.swift */; };
+		274A280028DCDD3B00B406D4 /* AddTasklView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A27FF28DCDD3B00B406D4 /* AddTasklView.swift */; };
+		274A280228DCE25400B406D4 /* TaskCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A280128DCE25400B406D4 /* TaskCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +27,14 @@
 		274A27DD28DCB55B00B406D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		274A27DF28DCB55E00B406D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		274A27E228DCB55E00B406D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		274A27E428DCB55E00B406D4 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		274A27E728DCB55F00B406D4 /* Reminders.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Reminders.xcdatamodel; sourceTree = "<group>"; };
+		274A27F128DCD2DA00B406D4 /* RemindersDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersDataManager.swift; sourceTree = "<group>"; };
+		274A27F428DCD44200B406D4 /* HelperFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFormatter.swift; sourceTree = "<group>"; };
+		274A27F728DCD48700B406D4 /* DatePickerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerTextField.swift; sourceTree = "<group>"; };
+		274A27FA28DCD53500B406D4 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		274A27FD28DCDA6100B406D4 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		274A27FF28DCDD3B00B406D4 /* AddTasklView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTasklView.swift; sourceTree = "<group>"; };
+		274A280128DCE25400B406D4 /* TaskCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +67,14 @@
 		274A27DA28DCB55B00B406D4 /* Reminders */ = {
 			isa = PBXGroup;
 			children = (
-				274A27DB28DCB55B00B406D4 /* RemindersApp.swift */,
-				274A27DD28DCB55B00B406D4 /* ContentView.swift */,
+				274A27F628DCD46C00B406D4 /* CustomViews */,
+				274A27F328DCD43400B406D4 /* Helpers */,
+				274A27F028DCD2B700B406D4 /* Managers */,
+				274A27F928DCD4F100B406D4 /* Models */,
+				274A27FC28DCDA2B00B406D4 /* ViewModels */,
+				274A27EF28DCD29700B406D4 /* Views */,
+				274A27EE28DCD27F00B406D4 /* App */,
 				274A27DF28DCB55E00B406D4 /* Assets.xcassets */,
-				274A27E428DCB55E00B406D4 /* Persistence.swift */,
 				274A27E628DCB55F00B406D4 /* Reminders.xcdatamodeld */,
 				274A27E128DCB55E00B406D4 /* Preview Content */,
 			);
@@ -71,6 +87,64 @@
 				274A27E228DCB55E00B406D4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		274A27EE28DCD27F00B406D4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				274A27DB28DCB55B00B406D4 /* RemindersApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		274A27EF28DCD29700B406D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				274A27DD28DCB55B00B406D4 /* ContentView.swift */,
+				274A27FF28DCDD3B00B406D4 /* AddTasklView.swift */,
+				274A280128DCE25400B406D4 /* TaskCellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		274A27F028DCD2B700B406D4 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				274A27F128DCD2DA00B406D4 /* RemindersDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		274A27F328DCD43400B406D4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				274A27F428DCD44200B406D4 /* HelperFormatter.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		274A27F628DCD46C00B406D4 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				274A27F728DCD48700B406D4 /* DatePickerTextField.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		274A27F928DCD4F100B406D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				274A27FA28DCD53500B406D4 /* TaskModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		274A27FC28DCDA2B00B406D4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				274A27FD28DCDA6100B406D4 /* TaskViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +217,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				274A27E528DCB55F00B406D4 /* Persistence.swift in Sources */,
+				274A27F528DCD44200B406D4 /* HelperFormatter.swift in Sources */,
+				274A27F228DCD2DA00B406D4 /* RemindersDataManager.swift in Sources */,
 				274A27DE28DCB55B00B406D4 /* ContentView.swift in Sources */,
 				274A27DC28DCB55B00B406D4 /* RemindersApp.swift in Sources */,
+				274A280028DCDD3B00B406D4 /* AddTasklView.swift in Sources */,
 				274A27E828DCB55F00B406D4 /* Reminders.xcdatamodeld in Sources */,
+				274A27FE28DCDA6100B406D4 /* TaskViewModel.swift in Sources */,
+				274A27F828DCD48700B406D4 /* DatePickerTextField.swift in Sources */,
+				274A27FB28DCD53500B406D4 /* TaskModel.swift in Sources */,
+				274A280228DCE25400B406D4 /* TaskCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
